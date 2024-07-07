@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IFNews - Página de Inicio</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="../script/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="../src/index.html">
+                <img src="../img/IFNEWS_logo.png" alt="Logo del IFSul">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../src/index.html"">Inicio</a></li>
+                <li><a href="../src/category/sports.html">Deportes</a></li>
+                <li><a href="../src/category/events.html">Eventos</a></li>
+                <li><a href="../src/category/institution.html">Institucional</a></li>
+                <li><a href="../src/category/prize.html">Premios</a></li>
+                <button id="enviar-noticia">
+                    <li>Envíe una noticia</li>
+                </button>
+            </ul>
+        </nav>
+    </header>
+    <br>
+    <br>
+    <br>
+    <br>
+    <main>
+        <section id="noticias">
+            <!-- Las noticias se cargarán dinámicamente con JavaScript -->
+        </section>
+    </main>
+
+    <section class="testimonios">
+        <h2> Testimonios</h2>
+        <div class="carousel-container">
+            <div class="carousel">
+                <div class="carousel-slide">
+                    <img src="../img/users/images.jpg" alt="User 1" class="user-pic">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tristique purus metus.</p>
+                </div>
+                <div class="carousel-slide">
+                    <img src="../img/users/pngtree-man-wearing-glasses-is-wearing-colorful-background-image_2905240.jpg" alt="User 2" class="user-pic">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tristique purus metus.</p>
+                </div>
+                <div class="carousel-slide">
+                    <img src="../img/users/FjU2lkcWYAgNG6d.jpg" alt="User 3" class="user-pic">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tristique purus metus.</p>
+                </div>
+                <!-- Agrega más slides según necesites -->
+            </div>
+            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+            <button class="next" onclick="moveSlide(1)">&#10095;</button>
+        </div>    
+    </section>
+
+    <br>
+    <br>
+    <br>
+
+    <section id="mensaje-proceso-seleccion">
+        <div class="container">
+            <h2>Próximo Proceso de Selección del IFSul</h2>
+            <!-- Aquí se insertará el mensaje generado dinámicamente -->
+        </div>
+    </section>
+
+    
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Envíe una noticia</h2>
+            <form id="formulario-noticia">
+                <label for="titulo">Título:</label>
+                <input type="text" id="titulo" name="titulo" required>
+                <label for="imagen">Imagen:</label>
+                <input type="file" id="imagen" name="imagen" accept="image/*" required>
+                <label for="contenido">Contenido:</label>
+                <textarea id="contenido" name="contenido" rows="4" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-info">
+            <h3>Luis Felipe Carballo Lovato</h3>
+            <p>Correo electrónico: luis.carballol@example.com</p>
+            <p>Teléfono: +1234567890</p>
+            <p>Redes sociales:</p>
+            <ul class="social-links">
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">LinkedIn</a></li>
+                <li><a href="#">GitHub</a></li>
+            </ul>
+        </div>
+        <div class="associates">
+            <h3>Asociados</h3>
+            <div class="logos">
+                <a href="https://www.utu.edu.uy/">
+                    <img src="../img/logo_utu.png" alt="Logo de UTU">
+                </a>
+                <a href="https://utec.edu.uy/es/">
+                    <img src="../img/logo_utec.png" alt="Logo de UTEC">
+                </a>
+                <a href="http://www.ifsul.edu.br/">
+                    <img src="../img/logo_ifsul.png" alt="Logo de IFSul">
+                </a>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2024 IFNews - Todos los derechos reservados</p>
+        </div>
+    </footer>    
+</body>
+</html>

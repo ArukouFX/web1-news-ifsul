@@ -1,0 +1,426 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    text-align: center;
+    border-radius: 10px; /* Agrega bordes redondeados */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Agrega sombra paralela */
+}
+
+.logo img {
+    width: 60px; /* Ajustar según el tamaño del logo */
+    height: auto;
+    border-radius: 10px; /* Agrega bordes redondeados a la imagen */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+main {
+    padding: 20px;
+}
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-info, .associates, .copyright {
+    flex: 1;
+    margin-bottom: 20px;
+}
+
+.footer-info h3, .associates h3 {
+    margin-bottom: 10px;
+}
+
+.footer-info p {
+    margin: 5px 0;
+}
+
+.social-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.social-links li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-links li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.social-links li a:hover {
+    text-decoration: underline;
+}
+
+.logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.logos a {
+    margin: 0 10px;
+}
+
+.logos img {
+    width: 100px;
+}
+
+.copyright {
+    font-size: 0.9em;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #333; /* Cambia el color de fondo del menú */
+}
+
+nav ul li {
+    display: inline;
+}
+
+
+
+nav ul li a {
+    display: inline-block;
+    padding: 10px 20px; /* Espacio entre elementos del menú */
+    text-decoration: none;
+    color: #fff; /* Color del texto del enlace */
+    border-radius: 20px; /* Ajusta el radio de la esquina para hacerlo redondeado */
+}
+
+nav ul li a:hover {
+    color: #f9f9f9;
+    background-color: #555; /* Color de fondo al pasar el ratón */
+}
+
+/* Fix header */
+
+header {
+    position: fixed; /* Fija la posición del encabezado */
+    top: 0; /* Lo coloca en la parte superior del viewport */
+    width: 100%; /* Ocupa el ancho completo del viewport */
+    background-color: #333; /* Color de fondo del encabezado */
+    color: #fff; /* Color del texto */
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+}
+
+.logo {
+    float: left; /* Alinea el logotipo a la izquierda */
+    margin-left: 20px; /* Añade un margen a la izquierda */
+}
+
+nav ul {
+    margin: 0; /* Elimina el margen del ul */
+    padding: 0; /* Elimina el relleno del ul */
+    list-style: none; /* Elimina los estilos de la lista */
+}
+
+nav ul li {
+    display: inline-block; /* Muestra los elementos de la lista en línea */
+    margin-right: 20px; /* Añade un margen a la derecha */
+}
+
+nav ul li a {
+    color: #fff; /* Color del texto del enlace */
+    text-decoration: none; /* Elimina el subrayado del enlace */
+}
+
+nav ul li a:hover {
+    text-decoration: underline; /* Añade un subrayado al pasar el ratón sobre el enlace */
+}
+
+/* Button Enviar-Noticia */
+
+#enviar-noticia {
+    background-color: #4CAF50; /* Color de fondo */
+    color: white; /* Color del texto */
+    padding: 10px 20px; /* Espacio alrededor del texto */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+    font-size: 16px; /* Tamaño del texto */
+}
+
+#enviar-noticia:hover {
+    background-color: #45a049; /* Cambia el color de fondo al pasar por encima */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    text-align: center;
+    border-radius: 10px; /* Agrega bordes redondeados */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Agrega sombra paralela */
+}
+
+.logo img {
+    width: 60px; /* Ajustar según el tamaño del logo */
+    height: auto;
+    border-radius: 10px; /* Agrega bordes redondeados a la imagen */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+main {
+    padding: 20px;
+}
+
+/* Estilos para las noticias */
+#noticias {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* Estilos para cada artículo de noticia */
+#noticias article {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+#noticias article img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+#noticias article img:hover {
+    transform: scale(1.1); /* Agranda la imagen al pasar el mouse sobre ella */
+}
+
+#noticias article h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+#noticias article a h2 {
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s ease-in-out;
+}
+
+#noticias article a h2:hover {
+    color: #7c7c7c; /* Cambia el color del enlace al pasar el mouse sobre él */
+}
+
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-info, .associates, .copyright {
+    flex: 1;
+    margin-bottom: 20px;
+}
+
+.footer-info h3, .associates h3 {
+    margin-bottom: 10px;
+}
+
+.footer-info p {
+    margin: 5px 0;
+}
+
+.social-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.social-links li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-links li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.social-links li a:hover {
+    text-decoration: underline;
+}
+
+.logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.logos a {
+    margin: 0 10px;
+}
+
+.logos img {
+    width: 100px;
+}
+
+.copyright {
+    font-size: 0.9em;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #333; /* Cambia el color de fondo del menú */
+}
+
+nav ul li {
+    display: inline;
+}
+
+
+
+nav ul li a {
+    display: inline-block;
+    padding: 10px 20px; /* Espacio entre elementos del menú */
+    text-decoration: none;
+    color: #fff; /* Color del texto del enlace */
+    border-radius: 20px; /* Ajusta el radio de la esquina para hacerlo redondeado */
+}
+
+nav ul li a:hover {
+    color: #f9f9f9;
+    background-color: #555; /* Color de fondo al pasar el ratón */
+}
+
+/* Fix header */
+
+header {
+    position: fixed; /* Fija la posición del encabezado */
+    top: 0; /* Lo coloca en la parte superior del viewport */
+    width: 100%; /* Ocupa el ancho completo del viewport */
+    background-color: #333; /* Color de fondo del encabezado */
+    color: #fff; /* Color del texto */
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+}
+
+.logo {
+    float: left; /* Alinea el logotipo a la izquierda */
+    margin-left: 20px; /* Añade un margen a la izquierda */
+}
+
+nav ul {
+    margin: 0; /* Elimina el margen del ul */
+    padding: 0; /* Elimina el relleno del ul */
+    list-style: none; /* Elimina los estilos de la lista */
+}
+
+nav ul li {
+    display: inline-block; /* Muestra los elementos de la lista en línea */
+    margin-right: 20px; /* Añade un margen a la derecha */
+}
+
+nav ul li a {
+    color: #fff; /* Color del texto del enlace */
+    text-decoration: none; /* Elimina el subrayado del enlace */
+}
+
+nav ul li a:hover {
+    text-decoration: underline; /* Añade un subrayado al pasar el ratón sobre el enlace */
+}
+
+/* Animar Logo */
+
+@keyframes moverLogo {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(100px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.logo a img {
+    transition: transform 0.5s;
+}
+
+.logo a img:hover {
+    animation: moverLogo 2s ease-in-out;
+}
